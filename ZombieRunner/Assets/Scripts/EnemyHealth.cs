@@ -10,8 +10,8 @@ public class EnemyHealth : MonoBehaviour
 	
 	public void TakeDamage(float damage)
 	{
+		BroadcastMessage("OnDamageTaken");
 		this.hitPoints -= damage;
-		Debug.Log(this.transform.name + " has " + this.hitPoints + " health remaining.");
 		if(this.hitPoints <= 0) { Destroy(gameObject); }
 		return;
 	}

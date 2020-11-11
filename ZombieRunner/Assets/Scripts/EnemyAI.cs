@@ -9,6 +9,7 @@ public class EnemyAI : MonoBehaviour
 	[SerializeField] float chaseRange = 10f;
 	[SerializeField] float maxChaseRange = 30f;
 	[SerializeField] float attackRange = 1f;
+	[SerializeField] float turnSpeed = 5f;
 	
 	NavMeshAgent navMeshAgent;
 	float distanceToTarget = Mathf.Infinity;
@@ -42,7 +43,8 @@ public class EnemyAI : MonoBehaviour
     
    private void EngageTarget()
     {
-	    // if in attack range, attack
+	    
+	    FaceTarget();
 	    
 	    if(distanceToTarget <= navMeshAgent.stoppingDistance)
 	    {
@@ -66,6 +68,17 @@ public class EnemyAI : MonoBehaviour
 	private void AttackTarget()
     {
 	    GetComponent<Animator>().SetBool("attack", true);
-	    Debug.Log(name + " is attacking " + target.name+ "!");
+    }
+    
+    private void FaceTarget()
+    {
+	   Vector3 direction = (target.position - transform.position).normalized;
+	   Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+	   transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnSpeed); 
+    }
+    
+    public void OnDamageTaken()
+    {
+	    this.isProvoked = true;
     }
 }

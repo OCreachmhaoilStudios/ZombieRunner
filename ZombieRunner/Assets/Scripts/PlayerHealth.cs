@@ -15,7 +15,7 @@ public class PlayerHealth : MonoBehaviour
 			Debug.Log("Player has died.");
 		}
 		*/
-		if(this.maxHealth <= 0) { Debug.Log("Player is dead."); }
+		if(this.maxHealth <= 0) { GetComponent<DeathHandler>().HandleDeath(); }
 		this.maxHealth = (this.maxHealth -= damage) >= 0 ? this.maxHealth - damage : 0;
 
 		return;
