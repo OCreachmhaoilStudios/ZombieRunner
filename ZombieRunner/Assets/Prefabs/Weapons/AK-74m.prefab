@@ -118,6 +118,10 @@ MonoBehaviour:
   damage: 40
   muzzleFlash: {fileID: 5074038205091316474, guid: c8c79284c3cce9420a7f7a634ded2936,
     type: 3}
+  hitEffect: {fileID: 0}
+  ammoSlot: {fileID: 0}
+  magazineCapacity: 30
+  timeBetweenShots: 0.01
 --- !u!1001 &1536192883370631795
 PrefabInstance:
   m_ObjectHideFlags: 0
