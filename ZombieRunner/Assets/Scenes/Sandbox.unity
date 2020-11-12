@@ -3948,6 +3948,11 @@ PrefabInstance:
       propertyPath: muzzleFlash
       value: 
       objectReference: {fileID: 748879282}
+    - target: {fileID: 1422501354274883322, guid: 8b519635fa1647d729c1e235876e7e2f,
+        type: 3}
+      propertyPath: range
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3951631647273909297, guid: 8b519635fa1647d729c1e235876e7e2f,
         type: 3}
       propertyPath: m_IsActive
@@ -3982,6 +3987,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5520340910832035287, guid: 8b519635fa1647d729c1e235876e7e2f,
+        type: 3}
+      propertyPath: currentWeapon
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5631755780388346656, guid: 8b519635fa1647d729c1e235876e7e2f,
         type: 3}

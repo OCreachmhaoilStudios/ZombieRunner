@@ -45,6 +45,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7157803295352295584}
+  - component: {fileID: 5520340910832035287}
   m_Layer: 0
   m_Name: Weapons
   m_TagString: Untagged
@@ -68,6 +69,19 @@ Transform:
   m_Father: {fileID: 7157803295530440983}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5520340910832035287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7157803295352295585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f68cc105f9897f6e82ed440170d6cfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWeapon: 1
 --- !u!1 &7157803295530140977
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,15 +617,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8664606255032443075}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6938553224863545806 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1762152230363322637, guid: 19d1ccdd229f9650294c91796e5bed6b,
-    type: 3}
-  m_PrefabInstance: {fileID: 8664606255032443075}
-  m_PrefabAsset: {fileID: 0}
 --- !u!198 &6865489738558608364 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 2844520081901630255, guid: 19d1ccdd229f9650294c91796e5bed6b,
+    type: 3}
+  m_PrefabInstance: {fileID: 8664606255032443075}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6938553224863545806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1762152230363322637, guid: 19d1ccdd229f9650294c91796e5bed6b,
     type: 3}
   m_PrefabInstance: {fileID: 8664606255032443075}
   m_PrefabAsset: {fileID: 0}
