@@ -18,6 +18,7 @@ MonoBehaviour:
   muzzleFlash: {fileID: 6865489738558608364}
   hitEffect: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
   ammoSlot: {fileID: 3248018247522369275}
+  ammoType: 0
   timeBetweenShots: 0.15
 --- !u!114 &5562823192322051865
 MonoBehaviour:
@@ -99,7 +100,7 @@ GameObject:
   - component: {fileID: 3248018247522369275}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -256,7 +257,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf1ef725213cf8a38d5a22b0ffd81ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoCount: 30
+  ammoSlots:
+  - ammoType: 0
+    ammoAmount: 46
+  - ammoType: 1
+    ammoAmount: 121
 --- !u!1 &7157803295530140979
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,6 +613,11 @@ PrefabInstance:
         type: 3}
       propertyPath: timeBetweenShots
       value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762152230903731379, guid: 19d1ccdd229f9650294c91796e5bed6b,
+        type: 3}
+      propertyPath: ammoType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19d1ccdd229f9650294c91796e5bed6b, type: 3}
